@@ -6,6 +6,14 @@
 
 **RA mentor:** Su Nan
 
+### Data
+
+* stock price and volume data is from WIND database
+* analyst report data is from Suntime database
+* alpha 101 from ricequant database
+* access through **PHBS finlab**
+* standardize cross-sectionally
+
 ## 1. Motivation
 
 ### 1.1 Shared Analyst Coverage
@@ -97,14 +105,7 @@ $$
 
 ## 3. Experiment
 
-#### 3.1 Data
-
-* stock price and volume data is from WIND database
-* analyst report data is from Suntime database
-* alpha 101 from ricequant database
-* access through **PHBS finlab**
-
-#### 3.2 Parameter
+#### 3.1 Fintune Parameter
 
 | Model | Parameter | Value          |
 | ----- | --------- | -------------- |
@@ -121,13 +122,13 @@ $$
 | GCN   | num_layers | 4             |
 
 
-#### 3.3 Single Factor Test
+#### 3.2 Single Factor Test
 * Assumption: The larger the factor value is, the greater the stock return will be in the future
 * Group Invetment Return: rank the stocks by the factor value in descending order into 10 groups, then long the 10th group, short the 1st group.
 
 ![](picture/pic6_factor.png)
 
-#### 3.4 Model Comparison
+#### 3.3 Model Comparison
 
 * Invetment Performance
 ![](picture/pic_model_performance.png)
