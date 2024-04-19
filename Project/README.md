@@ -83,7 +83,7 @@ sac.txt_i=\frac{\sum_{j=1}^N S_{i j} {\text{  }}mom_j}{\sum_{j=1}^N S_{i j}} {\t
 {\text{ is the factor of }}stock_i{\text{, }} mom_j{\text{ is the past momentum of }}stock_j)
 $$
 
-### 2.3 Stock Prediction
+### 2.3 Stock Prediction Model
 
 (1) Cross Section: MLP, LR, RF, GBDT
 ```
@@ -95,7 +95,7 @@ $$
 ```
 (3) Graph:  GCN
 ```
-[stock_num, stock_num] + [batch_size, sequence_len, feature_num] -> [batch_size, 1]
+matrix S + [batch_size, sequence_len, feature_num] -> [batch_size, 1]
 ```
 
 <p align='center'><img src="picture\pic_model.png" width="800px" /></p>
