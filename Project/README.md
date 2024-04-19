@@ -110,12 +110,11 @@ $$
 | ----- | --------- | -------------- |
 | BERT  | length    | 500            |
 |       | pooling   | first-last-avg |
-| MLP   |           |                |
-|       |           |                |
-| GRU   |           |                |
-|       |           |                |
-| GCN   |           |                |
-|       |           |                |
+| MLP   | alpha     | 0.001          |
+|       | hidden size| (64, 32)      |
+| GRU   | num_layers | 2             |
+|       | hidden size| 64            |
+| GCN   | num_layers | 4             |
 
 
 #### (3) Single Factor Test
@@ -137,13 +136,13 @@ $$
 
 ### (1) Current Work
 
-* [X] We use text-based method to improve shared analyst coverage factor.
+* [X] We use textual similarity to improve shared analyst coverage factor.
 * [X] We use claculated matrix to enhance stock prediction model.
 
 ### (2) TODO
 * [ ] Add more models.
 
-* [ ] As training model takes a long time, we only divide train and test set once. We will use **time series cross validation** later on.
+* [ ] As training model took a long time, we only splitted train and test set once. We will use **time series cross validation** later on.
 
 ### (3) Academic Discussion
 
