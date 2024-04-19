@@ -85,7 +85,7 @@ $$
 
 ### 2.3 Stock Prediction
 
-(1) Cross Section: MLP
+(1) Cross Section: MLP, LR, RF, GBDT
 ```
 [batch_size, feature_num] -> [batch_size, 1]
 ```
