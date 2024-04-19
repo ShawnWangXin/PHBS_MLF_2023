@@ -63,21 +63,6 @@ Textual similarity provides a new perspective.
 
 <p align='center'><img src="picture/pic2_sac2.png" width="800px" /></p>
 
-### 1.3 Stock Prediction Model
-
-(1) Cross Section: MLP
-```
-[batch_size, feature_num] -> [batch_size, 1]
-```
-(2) Time series: RNN
-```
-[batch_size, sequence_len, feature_num] -> [batch_size, 1]
-```
-(3) Graph:  GCN
-```
-[stock_num, stock_num] + [batch_size, sequence_len, feature_num] -> [batch_size, 1]
-```
-
 ## 2. Methodology
 
 ### 2.1 Matrix Construction
@@ -99,6 +84,19 @@ sac.txt_i=\frac{\sum_{j=1}^N S_{i j} {\text{  }}mom_j}{\sum_{j=1}^N S_{i j}} {\t
 $$
 
 ### 2.3 Stock Prediction
+
+(1) Cross Section: MLP
+```
+[batch_size, feature_num] -> [batch_size, 1]
+```
+(2) Time series: RNN
+```
+[batch_size, sequence_len, feature_num] -> [batch_size, 1]
+```
+(3) Graph:  GCN
+```
+[stock_num, stock_num] + [batch_size, sequence_len, feature_num] -> [batch_size, 1]
+```
 
 <p align='center'><img src="picture\pic_model.png" width="800px" /></p>
 
