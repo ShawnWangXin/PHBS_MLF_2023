@@ -110,6 +110,10 @@ $$
 | ----- | --------- | -------------- |
 | BERT  | length    | 500            |
 |       | pooling   | first-last-avg |
+| RF   | n_estimators| 100         |
+|       | max_depth| 15    |
+| GBDT   | n_estimators| 100         |
+|       | max_depth| 15    |
 | MLP   | alpha     | 0.001          |
 |       | hidden size| (64, 32)      |
 | GRU   | num_layers | 2             |
