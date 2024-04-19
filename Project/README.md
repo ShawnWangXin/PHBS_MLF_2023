@@ -51,10 +51,6 @@ Textual similarity provides a new perspective.
 
 <p align='center'><img src="picture/MLF.png" width="500px" /></p>
 
-> **Technological Link Factor** (Lee et al., 2019): used patents' IPC number to construct firm-level vector, used similarity to construct matrix, calculated factor.
-
-> **Innovation Similarity Factor** (Bekkerman et al., 2022): used patents' text to construct firm-level vector, used  similarity to construct matrix, calculated factor.
-
 **Our idea:**
 
 * Textual Similarity reminds us that there is a report text column in original data, which was ignored in past paper.
