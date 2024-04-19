@@ -97,14 +97,14 @@ $$
 
 ## 3. Experiment
 
-#### (1) Data
+#### 3.1 Data
 
 * stock price and volume data is from WIND database
 * analyst report data is from Suntime database
 * alpha 101 from ricequant database
 * access through **PHBS finlab**
 
-#### (2) Parameter
+#### 3.2 Parameter
 
 | Model | Parameter | Value          |
 | ----- | --------- | -------------- |
@@ -117,17 +117,18 @@ $$
 | GCN   | num_layers | 4             |
 
 
-#### (3) Single Factor Test
+#### 3.3 Single Factor Test
 * Assumption: The larger the factor value is, the greater the stock return will be in the future
 * Group Invetment Return: rank the stocks by the factor value in descending order into 10 groups, then long the 10th group, short the 1st group.
 
 ![](picture/pic6_factor.png)
 
-#### (4) Model Comparison
+#### 3.4 Model Comparison
 
-
+* Invetment Performance
 ![](picture/pic_model_performance.png)
 
+* Confusion Matrix
 * We predict on regression basis. Since classifying the top and bottom group of stock is more significant in investment. We will rank and classify the regression result and analyze **confusion matrix**.
 
 ![](picture/pic_confusionmatrix.png)
