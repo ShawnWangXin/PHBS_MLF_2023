@@ -74,8 +74,6 @@ Textual similarity provides a new perspective.
 
 <p align='center'><img src="picture\pic_formula2.png" width="800px" /></p>
 
-<p align='center'><img src="picture/pic3_sac_txt.png" width="800px" /></p>
-
 ### 2.2 Factor Calculation
 
 $$
