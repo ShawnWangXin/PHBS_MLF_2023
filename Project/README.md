@@ -1,6 +1,6 @@
 # Title: Stock Prediction Based on Report Similarity
 
-**Group 6:** [Wang Xin](https://github.com/ShawnWangXin) & Gong Jiaxin
+**Group 6:** [Wang Xin](https://github.com/ShawnWangXin) & [Gong Jiaxin] (https://github.com/mecc10?tab=repositories)
 
 **Instructor Professor:** [Jaehyuk Choi](https://github.com/jaehyukchoi)
 
