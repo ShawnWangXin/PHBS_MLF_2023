@@ -7,24 +7,24 @@
 **RA mentor:** Su Nan
 
 ### project modules
-**main.ipynb**: main code file
+* **main.ipynb**: main code file
 
-**GCN.py**: Graph Convolutional Model
+* **GCN.py**: Graph Convolutional Model
     This module builds a graph convolutional model which can be accessed by instantiating the GCN class. It allows users to apply graph-based neural network architectures to various types of graph-structured data.
 
-**models.py**: Time Series and Cross-Sectional Models
+* **models.py**: Time Series and Cross-Sectional Models
     This file defines two models: a GRU for time series modeling and an MLP (Multilayer Perceptron) for cross-sectional modeling. These models can be utilized by creating instances of GRU and MLP classes, respectively, for sequence data processing and static pattern recognition.
 
-**utils.py**: Optimization and Plotting Functions
+* **utils.py**: Optimization and Plotting Functions
     The Optim class is constructed to facilitate the optimization steps during the training process. Additionally, the module defines a plot_result function for visualizing results and includes several functions like mse (Mean Squared Error) and ic (Information Coefficient) to compute various metrics.
 
-**dataset.py**: Data Loading and Pre-processing for Time Series Models
+* **dataset.py**: Data Loading and Pre-processing for Time Series Models
     This script handles the loading of factor data, list of trading days, stock closing prices, market capitalizations, and adjacency matrices. It calculates returns and performs data preprocessing, preparing the dataset specifically for time series models.
 
-**Customloader.py**: Batch Data Iterator
+* **Customloader.py**: Batch Data Iterator
     Constructs an iterator that returns a batch of data (one day at a time), facilitating the training process for models that require sequential input.
 
-**datasetMLP.py**: Data Loading and Pre-processing for Cross-Sectional Models
+* **datasetMLP.py**: Data Loading and Pre-processing for Cross-Sectional Models
     Similar to dataset.py, this file loads factor data, lists of trading days, and stock closing prices. It calculates returns and conducts data preprocessing, tailored for cross-sectional models which analyze data across different entities without regard to the sequential order.
 
 ### Data
@@ -158,12 +158,7 @@ matrix S + [batch_size, sequence_len, feature_num] -> [batch_size, 1]
 * [X] We use textual similarity to improve shared analyst coverage factor.
 * [X] We use claculated matrix to enhance stock prediction model.
 
-### (2) TODO
-* [ ] Add more models.
-
-* [ ] As training model took a long time, we only splitted train and test set once. We will use **time series cross validation** later on.
-
-### (3) Academic Discussion
+### (2) Academic Discussion
 
 * [ ] Shared analyst coverage factor seemed invalid after 2023. Thus, we can only explore it in research usage. Besides, we can implement analysis to reveal hidden information channel and **momentum spillover effect**.
 
