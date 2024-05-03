@@ -6,6 +6,18 @@
 
 **RA mentor:** Su Nan
 
+## how to run the main.ipynb
+0. I set up the environment and run the code on autodl website. If you don't want to run the code on your laptop, I can start up a GPU server for you.
+1. If you want to run locally, we offer the large data in this baidu netdisk link:
+
+```
+link: https://pan.baidu.com/s/1XHwETlhbO6fkO6E2wzjgsQ 
+password: 3cth 
+```
+2. download the project on github, unzip mktcap.zip data.zip close.zip in the "./data/" folder
+3. then run the main.ipynb with libraries shown in the requirements.txt
+4. the calculation process and data flow of these neural network models is commented inside these following .py scripts
+
 ### project modules
 * **main.ipynb**: main code file
 
@@ -26,14 +38,6 @@
 
 * **datasetMLP.py**: Data Loading and Pre-processing for Cross-Sectional Models
     Similar to dataset.py, this file loads factor data, lists of trading days, and stock closing prices. It calculates returns and conducts data preprocessing, tailored for cross-sectional models which analyze data across different entities without regard to the sequential order.
-
-### Data
-
-* stock price and volume data is from WIND database
-* analyst report data is from Suntime database
-* alpha 101 from ricequant database
-* access through **PHBS finlab**
-* standardize cross-sectionally
 
 ## 1. Motivation
 
